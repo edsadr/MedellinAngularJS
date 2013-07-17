@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="meetup">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+
+    <script type="text/javascript" src="js/libs/angular.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/libs/moment.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+   <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a href="index.html" class="brand">AngularJS en MedellinJS</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+            <li><a href="#">Ver Eventos</a></li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid fill">
+        <div class="span8 offset2" style="margin-top:60px;" ng-view>
+            <h2>Meetups por MedellinJS</h2>
+              <p>&nbsp;</p>
+        </div>
+     </div>
+   </div>
+   <footer>
+    <div class="container">
+      <p class="muted credit">Ejemplo <a href="http://medellinjs.org">MedellinJS</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

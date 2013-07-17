@@ -1,0 +1,19 @@
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>Fecha</th>
+		<th>Tema</th>
+		<th>Invitados confirmados</th>
+		<th>Estado</th>
+	</tr>
+</thead>
+<tbody >
+	<!-- Iteración a través de cada evento y adición de opción de búsqueda y ordenación -->
+    <tr ng-repeat="evento in eventos | filter:search | orderBy: '-id'">
+        <td><span class="label label-info">{{fecha(evento.time)}}</span></td>
+        <td><a ng-click="viewDetail(evento)" class="link">{{evento.name}}</a></td>
+        <td>{{evento.yes_rsvp_count}}</td>
+        <td><span class="label label-{{etiquetaEstado(evento.status)}}">{{estado(evento.status)}}</span></td>
+    </tr>
+</tbody>
+</table>
